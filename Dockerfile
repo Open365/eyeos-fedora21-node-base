@@ -25,6 +25,5 @@ RUN git config --global user.email "jenkins@eyeos.com" \
 RUN cp /usr/share/zoneinfo/Europe/Madrid /etc/localtime
 
 COPY dnsmasq.conf /etc/dnsmasq.d/
-COPY netrc /root/.netrc
 COPY registerIntoBower.sh /root/
 COPY publishIntoNpm.sh /root/
