@@ -11,7 +11,7 @@ echo "$AUTH" > ~/.npmrc
 
 PACKAGE_NAME=`cat package.json | json name`
 PACKAGE_VERSION=`cat package.json | json version`
-PUBLISHED_VERSION=`npm info $PACKAGE_NAME version`
+PUBLISHED_VERSION=`npm info $PACKAGE_NAME version || echo '-'`
 
 if [ "$PACKAGE_VERSION" != "$PUBLISHED_VERSION" ]; then
     npm publish
