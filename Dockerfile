@@ -13,7 +13,7 @@ RUN npm install -g npm@2.14.4 && \
 				npm -g cache clean && \
 				npm cache clean && \
 				npm install -g grunt-cli istanbul bower && \
-				npm install -g eyeos-run-server eyeos-tags-to-dns && \
+				npm install -g eyeos-run-server eyeos-tags-to-dns json && \
 				/bin/echo '{"allow-root":true}' > /root/.bowerrc && \
 				echo 'email = systems@eyeos.com' >> /root/.npmrc && \
 				echo '_auth = c2VydmljZXM6c3VwZXIxcTJ3M2U0cjIwMTUtLiE=' >> /root/.npmrc && \
