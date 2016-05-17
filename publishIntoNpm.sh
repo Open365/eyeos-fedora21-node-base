@@ -2,6 +2,7 @@
 
 set -e
 set -u
+set -x
 
 DIR=$1
 AUTH=$2
